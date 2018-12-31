@@ -1,0 +1,17 @@
+<form class="container form-group with-margin" [formGroup]="numberForm">
+  <h3> Number Combiner</h3>
+  <div class="form-group">
+    <label for="actionSelect">Action</label>
+    <select formControlName="operation" id="actionSelect" class="form-control">
+      <option value="ADD">ADD</option>
+      <option value="MULTIPLY">MULTIPLY</option>
+    </select>
+  </div>
+  <div formArrayName="numbers" *ngFor="let number of numberForm.get('numbers').controls; let i = index">
+    <label class="margin-top" for="{{'number'+(i+1)}}">Number {{i+1}}</label>
+    <input type="number" class="form-control" id="{{'number'+(i+1)}}" placeholder="{{'Number '+(i+1)}}"
+      [formControlName]="i" />
+  </div>
+  <button class="margin-top btn btn-primary" (click)="addInput()">Add Input</button> <br />
+  <button class="margin-top btn btn-primary" (click)="performOperation()">Calculate Total</button>
+</form>

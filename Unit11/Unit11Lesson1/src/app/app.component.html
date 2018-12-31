@@ -1,0 +1,16 @@
+<div *ngIf="isCasual; else casualText">
+  <h1>Hey Man</h1>
+</div>
+<ng-template #casualText>
+  <h1>Hello Man</h1>
+</ng-template>
+<button (click)="switchValue()">Switch Value</button>
+
+<br />
+<br />
+<br />
+
+<div *ngFor="let name of names; let i = index">
+  {{name}}
+  {{i}}
+</div>

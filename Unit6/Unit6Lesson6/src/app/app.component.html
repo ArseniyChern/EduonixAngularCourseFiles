@@ -1,0 +1,13 @@
+<router-outlet></router-outlet>
+<br />
+<a [routerLink]="['first',textToPass]" [queryParams]="{'messageFirst':'message1'}" routerLinkActive="active">First</a><br />
+<a routerLink="/second/{{textToPass}}" [queryParams]="{'messageSecond':'message2'}" routerLinkActive="active">Second</a>
+<br />
+
+<button (click)="navigateTo('/first')">First</button><br />
+<button (click)="navigateTo('/second')">Second</button>
+
+<br />
+
+<br />
+<input [(ngModel)]="textToPass">

@@ -1,0 +1,13 @@
+<h1 class="with-margin">Log In</h1>
+<form class="with-margin form-group" [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+
+  <input placeholder="username" class="with-margin form-control" type="text" formControlName="username" />
+  <input placeholder="password" class="with-margin form-control" type="text" formControlName="password" />
+  <div formGroupName="identification">
+    <h5 class="with-margin"> Identification Document</h5>
+    <input placeholder="Identification Name" class="with-margin form-control" type="text" formControlName="idName" />
+    <input placeholder="Identification Number" class="with-margin form-control" type="text" formControlName="idNumber" />
+  </div>
+  <input class="with-margin btn btn-primary" type="submit" />
+
+</form>

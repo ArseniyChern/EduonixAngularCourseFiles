@@ -1,0 +1,14 @@
+<input type="text" [(ngModel)]="userId" placeholder="User Id" />
+<br />
+<button (click)="getUser()">Get User</button>
+<br />
+<h1>User:</h1>
+<h4>
+  <h4 class="bold">Name: </h4>{{user.name}}
+</h4>
+<h4>
+  <h4 class="bold">Year Of Birth: </h4>{{user.yob}}
+</h4>
+<h4>
+  <h4 class="bold">Email: </h4>{{user.email}}
+</h4>

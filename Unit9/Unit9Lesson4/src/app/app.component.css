@@ -1,0 +1,19 @@
+.error {
+  background-color: darkred;
+  width:100%;
+  border:2px solid red;
+  padding:1em;
+}
+input {
+  margin-right:100%;
+  margin-top:1em;
+}
+
+input.ng-invalid.ng-touched {
+  border: 1px solid red;
+  margin-bottom: .5em;
+}
+
+input.ng-valid.ng-dirty  {
+  border: 1px solid green;
+}

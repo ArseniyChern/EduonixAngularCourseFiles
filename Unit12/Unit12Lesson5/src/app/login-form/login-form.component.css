@@ -1,0 +1,11 @@
+.form-control {
+  padding: 1em;
+}
+
+.with-margin {
+ margin: 1em;
+}
+
+input {
+  width: 70%;
+}

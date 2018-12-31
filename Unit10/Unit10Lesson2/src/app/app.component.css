@@ -1,0 +1,8 @@
+.Card {
+  padding: 2em;
+  border: 2px solid lightgrey;
+}
+
+.Blue {
+  background-color: blue;
+}
