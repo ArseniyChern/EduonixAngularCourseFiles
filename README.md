@@ -1,5 +1,5 @@
 # EduonixAngularCourseFiles
-This repo contains project files for for the coursee Eduonix Angular 7 Practical Guide. It can be found at https://www.udemy.com/angular-the-ultimate-guide/
+This repo contains project files for for the course Eduonix Angular 7 Practical Guide. It can be found at https://www.udemy.com/angular-the-ultimate-guide/
 
 # To Clone
 ```git clone https://github.com/ArseniyChern/EduonixAngularCourseFiles.git```
